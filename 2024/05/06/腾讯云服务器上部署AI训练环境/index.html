@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>15分钟在腾讯云服务器上部署AI训练环境 | Treehole Utopian</title><meta name="author" content="Likalikali"><meta name="copyright" content="Likalikali"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="在腾讯云服务器上部署ubuntu22.04AI训练环境：32核3.59 16核1.79+0.05+0.8 8核0.9+0.05+0.890       160               1sudo apt updatesudo apt upgradeTab +Enterwget https:&#x2F;&#x2F;repo.anaconda.com&#x2F;archive&#x2F;Anaconda3-2024.02-1-Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="15分钟在腾讯云服务器上部署AI训练环境">
+<meta property="og:url" content="https://likalikali.github.io/2024/05/06/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2AI%E8%AE%AD%E7%BB%83%E7%8E%AF%E5%A2%83/index.html">
+<meta property="og:site_name" content="Treehole Utopian">
+<meta property="og:description" content="在腾讯云服务器上部署ubuntu22.04AI训练环境：32核3.59 16核1.79+0.05+0.8 8核0.9+0.05+0.890       160               1sudo apt updatesudo apt upgradeTab +Enterwget https:&#x2F;&#x2F;repo.anaconda.com&#x2F;archive&#x2F;Anaconda3-2024.02-1-Linux">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img1.imgtp.com/2023/09/05/1l4faYP5.jpg">
+<meta property="article:published_time" content="2024-05-06T10:14:56.000Z">
+<meta property="article:modified_time" content="2024-05-21T09:55:53.154Z">
+<meta property="article:author" content="Likalikali">
+<meta property="article:tag" content="AI">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img1.imgtp.com/2023/09/05/1l4faYP5.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://likalikali.github.io/2024/05/06/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2AI%E8%AE%AD%E7%BB%83%E7%8E%AF%E5%A2%83/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '15分钟在腾讯云服务器上部署AI训练环境',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-21 17:55:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/ava.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">36</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img1.imgtp.com/2023/09/05/1l4faYP5.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Treehole Utopian"><span class="site-name">Treehole Utopian</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">15分钟在腾讯云服务器上部署AI训练环境</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-06T10:14:56.000Z" title="发表于 2024-05-06 18:14:56">2024-05-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-21T09:55:53.154Z" title="更新于 2024-05-21 17:55:53">2024-05-21</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="15分钟在腾讯云服务器上部署AI训练环境"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="在腾讯云服务器上部署ubuntu22-04AI训练环境："><a href="#在腾讯云服务器上部署ubuntu22-04AI训练环境：" class="headerlink" title="在腾讯云服务器上部署ubuntu22.04AI训练环境："></a>在腾讯云服务器上部署ubuntu22.04AI训练环境：</h1><p>32核3.59 16核1.79+0.05+0.8 8核0.9+0.05+0.8<br>90       160               1<br>sudo apt update<br>sudo apt upgrade<br>Tab +Enter<br>wget <a target="_blank" rel="noopener" href="https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh">https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Linux-x86_64.sh</a><br>bash Ana+Tab<br>enter到15<br>yes到底<br>conda create -n QSAR python&#x3D;3.9<br>conda activate QSAR<br>conda install ipykernel notebook<br>pip install ipywidgets<br>pip install lightgbm<br>pip install optuna<br>pip install scikit-learn<br>pip install pandas<br>python -m ipykernel install –user –name QSAR –display-name “QSAR”<br>conda deactivate</p>
+<h2 id="命令行窗口启动法：（不建议）"><a href="#命令行窗口启动法：（不建议）" class="headerlink" title="命令行窗口启动法：（不建议）"></a>命令行窗口启动法：（不建议）</h2><p>jupyter notebook –ip 0.0.0.0 –no-browser</p>
+<h2 id="指定端口号或者ip"><a href="#指定端口号或者ip" class="headerlink" title="指定端口号或者ip"></a>指定端口号或者ip</h2><p>jupyter notebook –no-browser –port 6000 –ip&#x3D;192.168.1.100<br>如果你直接运行这条语句，点击蓝色连接就会进入到jupyter，输入上面设置的密码就可以用了<br>但是始终占用一个终端命令窗口，你ctrl+z之后就无法访问，再jupyter notebook之后，会给你打开新的端口<br>你想用回8888端口访问怎么办？<br>ps -aux | grep jupyter<br>查看运行中的jupyter 进程,杀死他们的pid，也就是第一列<br>kill -9  PID</p>
+<h2 id="正确的启动法："><a href="#正确的启动法：" class="headerlink" title="正确的启动法："></a>正确的启动法：</h2><p>第二步：生成配置文件<br>jupyter notebook –generate-config –allow-root</p>
+<p>配置文件生成在 ~&#x2F;.jupyter&#x2F;jupyter_notebook_config.py</p>
+<p>第三步：生成用于登录 的密码<br>jupyter notebook password</p>
+<p>输入密码并再次确认密码一致</p>
+<p>enter password<br>verify password<br>第四步：修改配置文件<br>设置监听地址，一般改为当前主机的ip，设置为0。0。0。0，则为所有地址可访问</p>
+<p>sed -ie “s&#x2F;#c.NotebookApp.ip &#x3D; ‘localhost’&#x2F;c.NotebookApp.ip &#x3D; ‘0.0.0.0’&#x2F;g” ~&#x2F;.jupyter&#x2F;jupyter_notebook_config.py</p>
+<p>设置监听端口，一般默认端口为8888</p>
+<p> sed -ie ‘s&#x2F;#c.NotebookApp.port &#x3D; 8888&#x2F;c.NotebookApp.port &#x3D; 8888&#x2F;g’ ~&#x2F;.jupyter&#x2F;jupyter_notebook_config.py</p>
+<p>禁用自动打开浏览器，此步可忽略sed -ie ‘s&#x2F;#c.NotebookApp.open_browser &#x3D; True&#x2F;c.NotebookApp.open_browser &#x3D; False&#x2F;g’ ~&#x2F;.jupyter&#x2F;jupyter_notebook_config.py</p>
+<p>最后启动Jupyter: nohup jupyter notebook –ip 0.0.0.0 –no-browser –allow-root &gt; jupyter.log 2&gt;&amp;1 &amp;</p>
+<p>第五步：启动Jupyter<br>jupyter notebook –allow-root &amp;<br>第六步：本地浏览器访问Jupyter<br>1、打开浏览器，输入 Jupyter服务器的ip:8000<br>2、进入登陆页面后，输入刚刚设置的密码即可</p>
+<p>第七步：后台运行Jupyter<br>在云服务器中搭建好jupyter并运行后，关闭服务器终端，Jupyter停止运行，其占用当前终端，因此需要将Jupyter在后台运行，<br>命令1：</p>
+<p>jupyter notebook –allow-root &gt; jupyter.log 2&gt;&amp;1 &amp;</p>
+<p>命令2：</p>
+<p>nohup jupyter notebook –allow-root &gt; jupyter.log 2&gt;&amp;1 &amp;</p>
+<p>用&amp;让命令后台运行, 并把标准输出写入jupyter.log中</p>
+<p>nohup表示no hang up, 就是不挂起, 这个命令执行后即使终端退出, Jupyter也不会停止运行.</p>
+<p>第八步：关闭后台运行的Jupyter（如果 需要的话）<br>1、找到Jupyter进程PID(关闭在前面后台执行的进程的步骤，首先找到其进程PID)</p>
+<p>ps -ef | grep xxxx</p>
+<p>ps -ef : 查看本机所有的进程；<br>grep xxxx代表过滤找到条件xxxx的进程</p>
+<p>2、kill掉Jupyter进程</p>
+<p>kill -9  PID</p>
+<p>kill -9 具体的进程的PID</p>
+<p>3、whereis python 查找本机安装 的所有python 版本及路径<br>4、ll &#x2F;usr&#x2F;bin&#x2F;python 查看python的快捷方式<br>5、ln -s &#x2F;home&#x2F;haimodp&#x2F;anaconda3&#x2F;bin&#x2F;python3.6 &#x2F;usr&#x2F;bin&#x2F;python<br>建立python的快捷方式链接</p>
+<ol>
+<li>后台运行<br>在云服务器中搭建好jupyter并运行后, 发现它会占用当前终端, 于是研究了一下怎么让它在后台运行.<br>1.入门级: jupyter notebook –ip 0.0.0.0 –no-browser –allow-root  &gt; jupyter.log 2&gt;&amp;1 &amp;<br>2.进阶版: nohup jupyter notebook –ip 0.0.0.0 –no-browser –allow-root &gt; jupyter.log 2&gt;&amp;1 &amp;</li>
+</ol>
+<p>解释: 1. 用&amp;让命令后台运行, 并把标准输出写入jupyter.log中</p>
+<p>nohup表示no hang up, 就是不挂起, 于是这个命令执行后即使终端退出, 也不会停止运行.<br>2. 终止进程</p>
+<p>执行上面第2条命令, 可以发现关闭终端重新打开后, 用jobs找不到jupyter这个进程了, 于是要用ps -a, 可以显示这个进程的pid.<br>kill -9 pid 终止进程</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://likalikali.github.io">Likalikali</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://likalikali.github.io/2024/05/06/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2AI%E8%AE%AD%E7%BB%83%E7%8E%AF%E5%A2%83/">https://likalikali.github.io/2024/05/06/%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2AI%E8%AE%AD%E7%BB%83%E7%8E%AF%E5%A2%83/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://likalikali.github.io" target="_blank">Treehole Utopian</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/AI/">AI</a></div><div class="post_share"><div class="social-share" data-image="https://img1.imgtp.com/2023/09/05/1l4faYP5.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/05/18/Jupyter-notebook%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" title="Jupyter-notebook使用技巧"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.imgtp.com/2023/09/05/1l4faYP5.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Jupyter-notebook使用技巧</div></div></a></div><div class="next-post pull-right"><a href="/2024/03/19/Vim%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" title="Vim使用技巧"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.imgtp.com/2023/09/05/OoRnjR1P.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Vim使用技巧</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/ava.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Likalikali</div><div class="author-info__description">此处安心，便是吾乡。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">36</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/likalikali"><i class="fab fa-github"></i><span>欢迎~Follow Me~</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/likalikali" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3185358013@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2ubuntu22-04AI%E8%AE%AD%E7%BB%83%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">在腾讯云服务器上部署ubuntu22.04AI训练环境：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%AA%97%E5%8F%A3%E5%90%AF%E5%8A%A8%E6%B3%95%EF%BC%9A%EF%BC%88%E4%B8%8D%E5%BB%BA%E8%AE%AE%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">命令行窗口启动法：（不建议）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E7%AB%AF%E5%8F%A3%E5%8F%B7%E6%88%96%E8%80%85ip"><span class="toc-number">1.2.</span> <span class="toc-text">指定端口号或者ip</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E7%A1%AE%E7%9A%84%E5%90%AF%E5%8A%A8%E6%B3%95%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">正确的启动法：</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/02/13/%E5%AE%9E%E7%94%A8%E6%A3%80%E7%B4%A2%E6%8A%80%E5%B7%A7/" title="实用检索技巧"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.imgtp.com/2023/09/05/HiYXpprH.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="实用检索技巧"/></a><div class="content"><a class="title" href="/2025/02/13/%E5%AE%9E%E7%94%A8%E6%A3%80%E7%B4%A2%E6%8A%80%E5%B7%A7/" title="实用检索技巧">实用检索技巧</a><time datetime="2025-02-13T11:44:06.000Z" title="发表于 2025-02-13 19:44:06">2025-02-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/11/IPFS%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="IPFS的基本使用"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.imgtp.com/2023/09/05/R8MHzSAD.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="IPFS的基本使用"/></a><div class="content"><a class="title" href="/2024/10/11/IPFS%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="IPFS的基本使用">IPFS的基本使用</a><time datetime="2024-10-11T13:17:53.000Z" title="发表于 2024-10-11 21:17:53">2024-10-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/11/QQ%E6%B8%85%E7%90%86/" title="QQ清理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/seaside.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="QQ清理"/></a><div class="content"><a class="title" href="/2024/10/11/QQ%E6%B8%85%E7%90%86/" title="QQ清理">QQ清理</a><time datetime="2024-10-11T13:11:50.000Z" title="发表于 2024-10-11 21:11:50">2024-10-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/08/25/Google-Colab-Tutorial/" title="Google Colab Tutorial"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/seaside.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Google Colab Tutorial"/></a><div class="content"><a class="title" href="/2024/08/25/Google-Colab-Tutorial/" title="Google Colab Tutorial">Google Colab Tutorial</a><time datetime="2024-08-25T10:50:11.000Z" title="发表于 2024-08-25 18:50:11">2024-08-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/02/Git%E5%AE%89%E8%A3%85%E4%B8%8EGithub%E6%8E%A8%E9%80%81/" title="Git安装与Github推送"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.imgtp.com/2023/09/05/tLcqHniF.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git安装与Github推送"/></a><div class="content"><a class="title" href="/2024/06/02/Git%E5%AE%89%E8%A3%85%E4%B8%8EGithub%E6%8E%A8%E9%80%81/" title="Git安装与Github推送">Git安装与Github推送</a><time datetime="2024-06-02T04:35:04.000Z" title="发表于 2024-06-02 12:35:04">2024-06-02</time></div></div></div></div></div></div></main><footer id="footer" style="background: ture"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2025 By Likalikali</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

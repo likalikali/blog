@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Git安装与Github推送 | Treehole Utopian</title><meta name="author" content="Likalikali"><meta name="copyright" content="Likalikali"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="步骤一：下载和安装 Git 客户端 打开浏览器并访问 Git 下载页面。 选择适合你操作系统的版本（Windows、macOS、Linux）并下载。 下载完成后，运行安装包并根据提示完成安装。安装过程保持默认设置即可。  步骤二：申请 GitHub 账号 打开浏览器并访问 GitHub。 点击右上角的 “Sign up” 按钮，按照提示创建一个新的 GitHub 账号。  步骤三：学习 Git 访">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git安装与Github推送">
+<meta property="og:url" content="https://likalikali.github.io/2024/06/02/Git%E5%AE%89%E8%A3%85%E4%B8%8EGithub%E6%8E%A8%E9%80%81/index.html">
+<meta property="og:site_name" content="Treehole Utopian">
+<meta property="og:description" content="步骤一：下载和安装 Git 客户端 打开浏览器并访问 Git 下载页面。 选择适合你操作系统的版本（Windows、macOS、Linux）并下载。 下载完成后，运行安装包并根据提示完成安装。安装过程保持默认设置即可。  步骤二：申请 GitHub 账号 打开浏览器并访问 GitHub。 点击右上角的 “Sign up” 按钮，按照提示创建一个新的 GitHub 账号。  步骤三：学习 Git 访">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img1.imgtp.com/2023/09/05/tLcqHniF.jpg">
+<meta property="article:published_time" content="2024-06-02T04:35:04.000Z">
+<meta property="article:modified_time" content="2024-06-02T04:35:26.844Z">
+<meta property="article:author" content="Likalikali">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img1.imgtp.com/2023/09/05/tLcqHniF.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://likalikali.github.io/2024/06/02/Git%E5%AE%89%E8%A3%85%E4%B8%8EGithub%E6%8E%A8%E9%80%81/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Git安装与Github推送',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-06-02 12:35:26'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/ava.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">36</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img1.imgtp.com/2023/09/05/tLcqHniF.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Treehole Utopian"><span class="site-name">Treehole Utopian</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Git安装与Github推送</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-06-02T04:35:04.000Z" title="发表于 2024-06-02 12:35:04">2024-06-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-06-02T04:35:26.844Z" title="更新于 2024-06-02 12:35:26">2024-06-02</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Git安装与Github推送"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="步骤一：下载和安装-Git-客户端"><a href="#步骤一：下载和安装-Git-客户端" class="headerlink" title="步骤一：下载和安装 Git 客户端"></a>步骤一：下载和安装 Git 客户端</h3><ol>
+<li>打开浏览器并访问 <a target="_blank" rel="noopener" href="https://git-scm.com/download">Git 下载页面</a>。</li>
+<li>选择适合你操作系统的版本（Windows、macOS、Linux）并下载。</li>
+<li>下载完成后，运行安装包并根据提示完成安装。安装过程保持默认设置即可。</li>
+</ol>
+<h3 id="步骤二：申请-GitHub-账号"><a href="#步骤二：申请-GitHub-账号" class="headerlink" title="步骤二：申请 GitHub 账号"></a>步骤二：申请 GitHub 账号</h3><ol>
+<li>打开浏览器并访问 <a target="_blank" rel="noopener" href="https://www.github.com/">GitHub</a>。</li>
+<li>点击右上角的 “Sign up” 按钮，按照提示创建一个新的 GitHub 账号。</li>
+</ol>
+<h3 id="步骤三：学习-Git"><a href="#步骤三：学习-Git" class="headerlink" title="步骤三：学习 Git"></a>步骤三：学习 Git</h3><ol>
+<li>访问 <a target="_blank" rel="noopener" href="https://git-scm.com/book/en/v2">Git 官方手册</a> 英文版或者 <a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2">中文版</a> 学习 Git 的基础知识。</li>
+<li>访问 <a target="_blank" rel="noopener" href="https://learngitbranching.js.org/">Learn Git Branching</a> 在线环境，进行 Git 命令练习。</li>
+</ol>
+<h3 id="实验场景-1-：仓库创建与提交"><a href="#实验场景-1-：仓库创建与提交" class="headerlink" title="实验场景(1)：仓库创建与提交"></a>实验场景(1)：仓库创建与提交</h3><h4 id="R0：查看工作区、暂存区、Git-仓库的状态"><a href="#R0：查看工作区、暂存区、Git-仓库的状态" class="headerlink" title="R0：查看工作区、暂存区、Git 仓库的状态"></a>R0：查看工作区、暂存区、Git 仓库的状态</h4><ol>
+<li>打开命令行工具（Windows: PowerShell，macOS&#x2F;Linux: Terminal）。</li>
+<li>在你的项目目录中运行以下命令查看当前状态：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="R1：本地初始化一个-Git-仓库并将项目文件纳入-Git-管理"><a href="#R1：本地初始化一个-Git-仓库并将项目文件纳入-Git-管理" class="headerlink" title="R1：本地初始化一个 Git 仓库并将项目文件纳入 Git 管理"></a>R1：本地初始化一个 Git 仓库并将项目文件纳入 Git 管理</h4><ol>
+<li>在命令行工具中，进入你的项目目录。例如：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> path/to/your/project</span><br></pre></td></tr></table></figure></li>
+<li>初始化一个新的 Git 仓库：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
+<li>将所有源文件加入 Git 管理：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="R2：提交"><a href="#R2：提交" class="headerlink" title="R2：提交"></a>R2：提交</h4><ol>
+<li>提交所做的更改：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;Initial commit&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="手工对文件进行修改"><a href="#手工对文件进行修改" class="headerlink" title="手工对文件进行修改"></a>手工对文件进行修改</h4><ol>
+<li>使用任何文本编辑器修改项目中的部分文件。</li>
+</ol>
+<h4 id="R3：查看修改"><a href="#R3：查看修改" class="headerlink" title="R3：查看修改"></a>R3：查看修改</h4><ol>
+<li>查看哪些文件已修改：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure></li>
+<li>查看具体的修改内容：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="R4：重新提交"><a href="#R4：重新提交" class="headerlink" title="R4：重新提交"></a>R4：重新提交</h4><ol>
+<li>添加修改并提交：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;Modified some files&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="再次对部分文件进行修改"><a href="#再次对部分文件进行修改" class="headerlink" title="再次对部分文件进行修改"></a>再次对部分文件进行修改</h4><ol>
+<li>再次使用文本编辑器修改项目中的部分文件。</li>
+</ol>
+<h4 id="R5：重新提交"><a href="#R5：重新提交" class="headerlink" title="R5：重新提交"></a>R5：重新提交</h4><ol>
+<li>添加修改并提交：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;Modified files again&quot;</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="R6：撤销最后一次提交"><a href="#R6：撤销最后一次提交" class="headerlink" title="R6：撤销最后一次提交"></a>R6：撤销最后一次提交</h4><ol>
+<li>撤销最后一次提交，但保留更改在暂存区：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --soft HEAD^</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="R7：查询提交记录"><a href="#R7：查询提交记录" class="headerlink" title="R7：查询提交记录"></a>R7：查询提交记录</h4><ol>
+<li>查看提交历史：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="实验场景-1-：推送到-GitHub"><a href="#实验场景-1-：推送到-GitHub" class="headerlink" title="实验场景(1)：推送到 GitHub"></a>实验场景(1)：推送到 GitHub</h3><h4 id="R8：在-GitHub-上创建名为“Lab1-学号”的仓库"><a href="#R8：在-GitHub-上创建名为“Lab1-学号”的仓库" class="headerlink" title="R8：在 GitHub 上创建名为“Lab1-学号”的仓库"></a>R8：在 GitHub 上创建名为“Lab1-学号”的仓库</h4><ol>
+<li>登录 GitHub 账号。</li>
+<li>点击右上角的 “+” 按钮，选择 “New repository”。</li>
+<li>在仓库名称中输入 “Lab1-学号”（用你的实际学号替换 “学号”），然后点击 “Create repository”。</li>
+</ol>
+<h4 id="R9：将本地仓库内容推送到-GitHub"><a href="#R9：将本地仓库内容推送到-GitHub" class="headerlink" title="R9：将本地仓库内容推送到 GitHub"></a>R9：将本地仓库内容推送到 GitHub</h4><ol>
+<li>在命令行工具中，将本地仓库与 GitHub 仓库关联：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/你的用户名/Lab1-学号.git</span><br></pre></td></tr></table></figure></li>
+<li>推送本地仓库内容到 GitHub：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>通过以上步骤，你已经完成了在本地安装 Git，创建并提交 Git 仓库，将其推送到 GitHub 仓库的全部过程。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://likalikali.github.io">Likalikali</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://likalikali.github.io/2024/06/02/Git%E5%AE%89%E8%A3%85%E4%B8%8EGithub%E6%8E%A8%E9%80%81/">https://likalikali.github.io/2024/06/02/Git%E5%AE%89%E8%A3%85%E4%B8%8EGithub%E6%8E%A8%E9%80%81/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://likalikali.github.io" target="_blank">Treehole Utopian</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img1.imgtp.com/2023/09/05/tLcqHniF.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/08/25/Google-Colab-Tutorial/" title="Google Colab Tutorial"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/seaside.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Google Colab Tutorial</div></div></a></div><div class="next-post pull-right"><a href="/2024/05/26/%E8%80%97%E6%97%B6%E5%BE%88%E9%95%BF%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%BF%98%E5%8A%A0nohup%E5%B0%B1%E8%BF%90%E8%A1%8C%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E/" title="耗时很长的程序忘加nohup就运行了怎么办"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.imgtp.com/2023/09/05/w2zUEOo4.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">耗时很长的程序忘加nohup就运行了怎么办</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/ava.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Likalikali</div><div class="author-info__description">此处安心，便是吾乡。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">36</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/likalikali"><i class="fab fa-github"></i><span>欢迎~Follow Me~</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/likalikali" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3185358013@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4%E4%B8%80%EF%BC%9A%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85-Git-%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="toc-number">1.</span> <span class="toc-text">步骤一：下载和安装 Git 客户端</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4%E4%BA%8C%EF%BC%9A%E7%94%B3%E8%AF%B7-GitHub-%E8%B4%A6%E5%8F%B7"><span class="toc-number">2.</span> <span class="toc-text">步骤二：申请 GitHub 账号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4%E4%B8%89%EF%BC%9A%E5%AD%A6%E4%B9%A0-Git"><span class="toc-number">3.</span> <span class="toc-text">步骤三：学习 Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E5%9C%BA%E6%99%AF-1-%EF%BC%9A%E4%BB%93%E5%BA%93%E5%88%9B%E5%BB%BA%E4%B8%8E%E6%8F%90%E4%BA%A4"><span class="toc-number">4.</span> <span class="toc-text">实验场景(1)：仓库创建与提交</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#R0%EF%BC%9A%E6%9F%A5%E7%9C%8B%E5%B7%A5%E4%BD%9C%E5%8C%BA%E3%80%81%E6%9A%82%E5%AD%98%E5%8C%BA%E3%80%81Git-%E4%BB%93%E5%BA%93%E7%9A%84%E7%8A%B6%E6%80%81"><span class="toc-number">4.1.</span> <span class="toc-text">R0：查看工作区、暂存区、Git 仓库的状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#R1%EF%BC%9A%E6%9C%AC%E5%9C%B0%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA-Git-%E4%BB%93%E5%BA%93%E5%B9%B6%E5%B0%86%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E7%BA%B3%E5%85%A5-Git-%E7%AE%A1%E7%90%86"><span class="toc-number">4.2.</span> <span class="toc-text">R1：本地初始化一个 Git 仓库并将项目文件纳入 Git 管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#R2%EF%BC%9A%E6%8F%90%E4%BA%A4"><span class="toc-number">4.3.</span> <span class="toc-text">R2：提交</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%8B%E5%B7%A5%E5%AF%B9%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E4%BF%AE%E6%94%B9"><span class="toc-number">4.4.</span> <span class="toc-text">手工对文件进行修改</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#R3%EF%BC%9A%E6%9F%A5%E7%9C%8B%E4%BF%AE%E6%94%B9"><span class="toc-number">4.5.</span> <span class="toc-text">R3：查看修改</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#R4%EF%BC%9A%E9%87%8D%E6%96%B0%E6%8F%90%E4%BA%A4"><span class="toc-number">4.6.</span> <span class="toc-text">R4：重新提交</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%8D%E6%AC%A1%E5%AF%B9%E9%83%A8%E5%88%86%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E4%BF%AE%E6%94%B9"><span class="toc-number">4.7.</span> <span class="toc-text">再次对部分文件进行修改</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#R5%EF%BC%9A%E9%87%8D%E6%96%B0%E6%8F%90%E4%BA%A4"><span class="toc-number">4.8.</span> <span class="toc-text">R5：重新提交</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#R6%EF%BC%9A%E6%92%A4%E9%94%80%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E6%8F%90%E4%BA%A4"><span class="toc-number">4.9.</span> <span class="toc-text">R6：撤销最后一次提交</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#R7%EF%BC%9A%E6%9F%A5%E8%AF%A2%E6%8F%90%E4%BA%A4%E8%AE%B0%E5%BD%95"><span class="toc-number">4.10.</span> <span class="toc-text">R7：查询提交记录</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E5%9C%BA%E6%99%AF-1-%EF%BC%9A%E6%8E%A8%E9%80%81%E5%88%B0-GitHub"><span class="toc-number">5.</span> <span class="toc-text">实验场景(1)：推送到 GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#R8%EF%BC%9A%E5%9C%A8-GitHub-%E4%B8%8A%E5%88%9B%E5%BB%BA%E5%90%8D%E4%B8%BA%E2%80%9CLab1-%E5%AD%A6%E5%8F%B7%E2%80%9D%E7%9A%84%E4%BB%93%E5%BA%93"><span class="toc-number">5.1.</span> <span class="toc-text">R8：在 GitHub 上创建名为“Lab1-学号”的仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#R9%EF%BC%9A%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E5%86%85%E5%AE%B9%E6%8E%A8%E9%80%81%E5%88%B0-GitHub"><span class="toc-number">5.2.</span> <span class="toc-text">R9：将本地仓库内容推送到 GitHub</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/02/13/%E5%AE%9E%E7%94%A8%E6%A3%80%E7%B4%A2%E6%8A%80%E5%B7%A7/" title="实用检索技巧"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.imgtp.com/2023/09/05/HiYXpprH.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="实用检索技巧"/></a><div class="content"><a class="title" href="/2025/02/13/%E5%AE%9E%E7%94%A8%E6%A3%80%E7%B4%A2%E6%8A%80%E5%B7%A7/" title="实用检索技巧">实用检索技巧</a><time datetime="2025-02-13T11:44:06.000Z" title="发表于 2025-02-13 19:44:06">2025-02-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/11/IPFS%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="IPFS的基本使用"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.imgtp.com/2023/09/05/R8MHzSAD.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="IPFS的基本使用"/></a><div class="content"><a class="title" href="/2024/10/11/IPFS%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="IPFS的基本使用">IPFS的基本使用</a><time datetime="2024-10-11T13:17:53.000Z" title="发表于 2024-10-11 21:17:53">2024-10-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/11/QQ%E6%B8%85%E7%90%86/" title="QQ清理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/seaside.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="QQ清理"/></a><div class="content"><a class="title" href="/2024/10/11/QQ%E6%B8%85%E7%90%86/" title="QQ清理">QQ清理</a><time datetime="2024-10-11T13:11:50.000Z" title="发表于 2024-10-11 21:11:50">2024-10-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/08/25/Google-Colab-Tutorial/" title="Google Colab Tutorial"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/seaside.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Google Colab Tutorial"/></a><div class="content"><a class="title" href="/2024/08/25/Google-Colab-Tutorial/" title="Google Colab Tutorial">Google Colab Tutorial</a><time datetime="2024-08-25T10:50:11.000Z" title="发表于 2024-08-25 18:50:11">2024-08-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/02/Git%E5%AE%89%E8%A3%85%E4%B8%8EGithub%E6%8E%A8%E9%80%81/" title="Git安装与Github推送"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img1.imgtp.com/2023/09/05/tLcqHniF.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Git安装与Github推送"/></a><div class="content"><a class="title" href="/2024/06/02/Git%E5%AE%89%E8%A3%85%E4%B8%8EGithub%E6%8E%A8%E9%80%81/" title="Git安装与Github推送">Git安装与Github推送</a><time datetime="2024-06-02T04:35:04.000Z" title="发表于 2024-06-02 12:35:04">2024-06-02</time></div></div></div></div></div></div></main><footer id="footer" style="background: ture"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2025 By Likalikali</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div class="no-result" id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
