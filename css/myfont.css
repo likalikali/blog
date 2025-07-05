@@ -2,7 +2,7 @@
 /* === KingHwa：只负责汉字 === */
 @font-face {
   font-family: 'KingHwaCN';
-  src: url('/fonts/KingHwa_OldSong-1.001.woff') format('woff');
+  src: url('/blog/fonts/KingHwa_OldSong-1.001.woff') format('woff');
   font-display: swap;
   /* 常用 CJK 统一表意文字区 + 扩展 A～F */
   unicode-range:
@@ -19,7 +19,7 @@
 /* === Cascadia Code：只负责拉丁字符 + 数字 + 常用符号 === */
 @font-face {
   font-family: 'CascadiaCode';
-  src: url('/fonts/CascadiaCode.woff') format('woff');
+  src: url('/blog/fonts/CascadiaCode.woff') format('woff');
   font-display: swap;
   /* 基本拉丁、补充拉丁-1、标点、数字等 */
   unicode-range:
