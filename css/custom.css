@@ -4,7 +4,7 @@
 #article-container h4::before,
 #article-container h5::before,
 #article-container h6::before{
-  content: "⛮";                 /* U+26EE GEAR WITH HANDLES ⛮ */  
+  content: "⛮ ";                 /* U+26EE GEAR WITH HANDLES ⛮ */  
   margin-right: .35em;
   font-family: inherit;         /* 继承正文字体即可 */
   font-size: 0.9em;             /* 略微缩小，保持和文字差不多高 */
